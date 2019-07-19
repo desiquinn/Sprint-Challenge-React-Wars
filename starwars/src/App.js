@@ -14,7 +14,8 @@ const App = () => {
 
 
   useEffect( () => {
-    axios.get("https://swapi.co/api/people/?format=json")
+    axios.get("https://henry-mock-swapi.herokuapp.com/api")
+    // using mock API because Swapi broke
       .then(response => {
         console.log(response.data.results)
         setStarWarsState(response.data.results)
@@ -28,7 +29,7 @@ const App = () => {
 
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any. API *** https://swapi.co/api/people  has 10 people***
+  // sync up with, if any. API *** https://swapi.co/api/people/?format=json  has 10 people***
 
   return (
     <div className="App">

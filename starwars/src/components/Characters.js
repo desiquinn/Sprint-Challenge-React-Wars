@@ -11,13 +11,14 @@ const Characters= (props) => {
 
     return (
         <div>
-            <Card.Group itemsPerRow="2">
+            <Card.Group>
             <Card centered raised color="teal">
                 {/* <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} /> */}
             <Card.Content>
             <Card.Header>{props.character.name}</Card.Header>
             <Card.Meta>
-                <span className='date'>{props.character.gender} Born: {props.character.birth_year}</span>
+                <span className='date'>Gender: {props.character.gender}</span>
+                <span className='date'>Birth Year: {props.character.birth_year}</span>
             </Card.Meta>
             {/* <Card.Description>
                 Matthew is a musician living in Nashville.
