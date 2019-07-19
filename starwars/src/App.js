@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div>
+      <div className="Info">
       {starWarsState.map( (character, i) => {
       return <Characters character={character} key={i}/> })}
       </div>
