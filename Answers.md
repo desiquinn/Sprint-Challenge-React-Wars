@@ -18,4 +18,4 @@ Props a.k.a Properties store exsisting data so that it can pass it to different 
 
 5. What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-Side Effects are any event that happens outside the scope of your application's purpose.  So requesting data from an outside source is considered a side effect.  You can sync effects by using the useEffect hook and applying the state or prop inside an array as a second argument to the useEffect hook.
+Side Effects are any event that happens outside the scope of your application's purpose.  So requesting data from an outside source is considered a side effect.  You can sync effects by using the useEffect hook and applying the state variable or prop inside an array as a second argument to the useEffect hook.
