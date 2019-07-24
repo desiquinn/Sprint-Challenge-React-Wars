@@ -1,8 +1,19 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin-bottom: 30px;
 }
 /* write your parent styles in here for your App.js */
+
+.Buttonwrapper {
+  width: 300px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
